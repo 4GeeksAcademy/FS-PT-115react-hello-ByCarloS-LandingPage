@@ -1,36 +1,14 @@
 import React from "react";
 import { Personaje } from "./Personaje";
+import { Nadvar } from "./Nadvar";
+import { Dos } from "./Dos";
+import { Copyright } from "./Copyright";
 //create your first component
 const Home = () => {
 	return (
 		<div className="container">
-			<nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-				<div className="container-fluid">
-					<a className="navbar-brand" href="#">ByCarlosS</a>
-					<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-						<span className="navbar-toggler-icon"></span>
-					</button>
-					<div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-						<div className="navbar-nav">
-							<a className="nav-link active" aria-current="page" href="#">INICIO</a>
-							<a className="nav-link" href="#">PERSONAJES</a>
-							<a className="nav-link" href="#">REDES</a>
-							<a className="nav-link" href="#">DONACIONES</a>
-						</div>
-					</div>
-				</div>
-			</nav>
-			<div className="row m-4">
-				<div className="col-md-12 sm-6 mb-3 mb-sm-0">
-					<div className="card" style={{backgroundColor: "silver"}}>
-						<div className="card-body">
-							<h5 className="card-title">SOLO LEVELING</h5>
-							<p className="card-text">narra la historia de Sung Jinwoo, un cazador de bajo rango en un mundo donde existen portales dimensionales que conectan con monstruos. Tras sobrevivir a una mazmorra doblemente peligrosa, Jinwoo recibe la habilidad de "subir de nivel" y fortalecerse a través de un sistema misterioso, transformándose del cazador más débil en uno de los más poderosos. </p>
-							<a href="#" className="btn btn-primary">Saber más...</a>
-						</div>
-					</div>
-				</div>
-			</div>
+			<Nadvar/>
+			<Dos/>
 			<div className="row">
 				<Personaje
 					nombre="Sung Jinwoo"
@@ -53,9 +31,7 @@ const Home = () => {
 					frase="“Ni siquiera yo comprendo lo que es él.”"
 				/>
 			</div>
-			<div className="card p-5" data-bs-theme="dark">
-				<h5 className="text-center">Copyright © ByCarlosS 2025</h5>
-			</div>
+			<Copyright/>
 		</div>
 	);
 };
